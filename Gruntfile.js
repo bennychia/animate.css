@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 
   // register task
   grunt.registerTask('concat-anim', 'Concatenates activated animations', concatAnim); // custom task
-  grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('default', ['concat-anim', /*'autoprefixer', */'cssmin']);
   grunt.registerTask('dev', ['watch']);
 
 };

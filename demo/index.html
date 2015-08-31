@@ -89,7 +89,7 @@ document.createElement('aside');
 				<ul class="clear">
 				<li class="item"><a href="#" class="lk" title="bounceOut"><span class="t">弹跳退出</span></a></li>
 				<li class="item"><a href="#" class="lk" title="bounceOutDown"><span class="t">弹跳向下退出</span></a></li>
-				<li class="item"><a href="#" class="lk" title="bounceInLeft"><span class="t">弹跳向左退出</span></a></li>
+				<li class="item"><a href="#" class="lk" title="bounceOutLeft"><span class="t">弹跳向左退出</span></a></li>
 				<li class="item"><a href="#" class="lk" title="bounceOutRight"><span class="t">弹跳向右退出</span></a></li>
 				<li class="item"><a href="#" class="lk" title="bounceOutUp"><span class="t">弹跳向上退出</span></a></li>
 				</ul>
@@ -287,16 +287,24 @@ document.createElement('aside');
 	</aside>
 	<article>
 		<div class="m_corearea">
-			<div class="m_corearea_bd">
-				<div class="toptopic clear">
-					<h2><span class="tit">Preview</span></h2>
-					<div class="opt">
-						<a href="###" class="btn btn2"><span class="t">动画预览</span></a>
-						<a href="###" class="btn btn2"><span class="t">复制代码</span></a>
-					</div>
-				</div>
+			<div class="m_corearea_bd clear">
 				<div class="m_stage">
-					<div id="role" class="m_role"><img src="role.png" alt="" /></div>
+					<div id="animation" class="animation"><img src="role.png" alt="" /></div>
+				</div>
+				<div class="m_property">
+					<div class="SC SC_similarlabel">
+						<div class="SC_hd">
+							<h2 class="tit"><strong class="tit_tx">查看源码</strong></h2>
+							<div class="opt"></div>
+						</div>
+						<div class="SC_bd">
+							<pre>
+<style style="display:block;" contenteditable="true">
+.hello{}
+</style>
+							</pre>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -311,10 +319,10 @@ document.createElement('aside');
 <script>
 $(function(){
 	$('#animatecss .tagCloud .lk').on('click',function(){
-		if(!$('#role').is(':animated')){
-			$('#role').attr('class','m_role animated ' + $(this).attr('title'));
+		if(!$('#animation').is(':animated')){
+			$('#animation').attr('class','animation animated ' + $(this).attr('title'));
 			setTimeout(function(){
-				$('#role').attr('class','m_role');
+				$('#animation').attr('class','animation');
 			},1000);
 			return false;	
 		}

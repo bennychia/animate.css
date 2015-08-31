@@ -202,17 +202,15 @@
 /* 2 结构
 ================================================================*/
 
-.container{ padding-top:20px; margin:0 auto; min-width:960px;}
-aside{ position:relative; z-index:1; float:left; width:30%; padding-left:20px}
+.container{ padding:20px 20px 0; margin:0 auto; min-width:960px;}
+aside{ position:relative; z-index:1; float:left; width:25%;}
 article{ position:relative; overflow:hidden; padding-left:20px}
-.m_corearea{ position:fixed; left:0; top:0; height:100%; width:100%; min-width:960px; padding-top:62px;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-}
-.m_corearea_bd{ position:relative; height:100%; margin-left:30%; padding-left:40px; margin-right:20px}
-.m_stage{ position:relative; height:60%; padding:10% 0 0; width:100%; text-align:center;}
-.m_role{ height:100%; display:inline-block; *display:inline; _zoom:1;}
-.m_role img{ max-height:100%; max-width:100%; vertical-align:top}
+.m_corearea{ position:fixed; left:0; top:0; width:100%; min-width:960px; height:0}
+.m_corearea_bd{ position:relative; padding:62px 20px 0}
+.m_stage{ width:50%; height:30%; margin-left:25%; padding:20px 0; text-align:center; float:left}
+.animation{ display:inline-block; *display:inline; _zoom:1;}
+.animation img{ max-height:100%; max-width:100%; vertical-align:top}
+.m_property{ position:relative; z-index:1; width:25%; float:left}
 
 /* SC sideContent结构
 ----------------------------------------------------------------*/
